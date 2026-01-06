@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate News - DARIK HOMES LTD</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-img">
+                    <img src="images/logo.jpg" alt="DARIK HOMES LTD Logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="logo-fallback" style="display: none; width: 50px; height: 50px; background: #e67e22; border-radius: 8px; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 1.2rem;">DH</div>
+                </div>
+                <div class="logo-text">
+                    <h2>DARIK HOMES LTD</h2>
+                    <p class="logo-tagline">Real Estates • Design • Construction • Investment</p>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="board.html" class="nav-link">Board of Directors</a></li>
+                <li><a href="properties.html" class="nav-link">Properties</a></li>
+                <li><a href="news.html" class="nav-link active">News</a></li>
+                <li><a href="newsletter.html" class="nav-link">Newsletter</a></li>
+                <li><a href="company-profile.html" class="nav-link">Company Profile</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact Us</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- News Hero Section -->
+    <section class="news-hero">
+        <div class="container">
+            <div class="news-hero-content">
+                <h1>Abuja Real Estate News</h1>
+                <p>Stay informed with the latest developments, market trends, and insights in Abuja's property market</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured News -->
+    <section class="featured-news">
+        <div class="container">
+            <h2>Featured News</h2>
+            <div class="featured-article">
+                <div class="featured-image">
+                    <img src="https://images.unsplash.com/photo-1600607687644-c7171b42498b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1973&q=80" alt="Nigerian Real Estate">
+                    <div class="featured-badge">Featured</div>
+                </div>
+                <div class="featured-content">
+                    <div class="article-meta">
+                        <span class="article-date">December 15, 2024</span>
+                        <span class="article-category">Market Analysis</span>
+                    </div>
+                    <h3>Abuja Property Market Shows Strong Growth in Q4 2024</h3>
+                    <p>Abuja's real estate market continues to demonstrate resilience with property values in key districts showing significant appreciation. Maitama and Asokoro districts lead the growth with luxury units seeing 15% price increases year-over-year.</p>
+                    <a href="#" class="read-more-btn">Read Full Article <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Categories -->
+    <section class="news-categories">
+        <div class="container">
+            <div class="category-filters">
+                <button class="category-btn active" data-category="all">All News</button>
+                <button class="category-btn" data-category="market">Market Updates</button>
+                <button class="category-btn" data-category="development">New Developments</button>
+                <button class="category-btn" data-category="investment">Investment</button>
+                <button class="category-btn" data-category="policy">Policy & Regulations</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Grid -->
+    <section class="news-grid-section">
+        <div class="container">
+            <div class="news-grid" id="newsGrid">
+                <!-- News articles will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="newsletter-cta">
+        <div class="container">
+            <div class="newsletter-cta-content">
+                <h2>Stay Updated with Abuja Real Estate</h2>
+                <p>Get the latest news, market insights, and exclusive property updates delivered to your inbox</p>
+                <div class="newsletter-cta-form">
+                    <input type="email" placeholder="Enter your email address" id="newsletterEmailCta">
+                    <button onclick="subscribeNewsletter()">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Abuja Elite Properties</h3>
+                    <p>Your trusted partner in premium housing units across Abuja.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="newsletter.html">Newsletter</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Unit Sales</a></li>
+                        <li><a href="#">Unit Rentals</a></li>
+                        <li><a href="#">Property Management</a></li>
+                        <li><a href="#">Investment Consulting</a></li>
+                        <li><a href="#">Mortgage Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-phone"></i> +234 (0) 803 123 4567</p>
+                    <p><i class="fas fa-envelope"></i> info@abujaeliteproperties.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Maitama, Abuja</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Abuja Elite Properties. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // News data
+        const newsArticles = [
+            {
+                id: 1,
+                title: "New Luxury Development Launched in Maitama",
+                excerpt: "A new luxury residential complex featuring 50 premium units has been launched in Maitama district, with prices starting from ₦85 million.",
+                category: "development",
+                date: "December 12, 2024",
+                image: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+                readTime: "3 min read"
+            },
+            {
+                id: 2,
+                title: "Abuja Property Investment Returns Hit 12%",
+                excerpt: "Real estate investments in Abuja are showing strong returns with average rental yields reaching 12% in prime locations.",
+                category: "investment",
+                date: "December 10, 2024",
+                image: "https://images.unsplash.com/photo-1600607687644-c7171b42498b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1973&q=80",
+                readTime: "4 min read"
+            },
+            {
+                id: 3,
+                title: "FCT Minister Announces New Housing Policy",
+                excerpt: "The FCT Minister has announced new policies to boost affordable housing development across Abuja districts.",
+                category: "policy",
+                date: "December 8, 2024",
+                image: "https://images.unsplash.com/photo-1600566753190-17f63ba4b6bd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2053&q=80",
+                readTime: "5 min read"
+            },
+            {
+                id: 4,
+                title: "Asokoro District Sees 20% Price Increase",
+                excerpt: "Property prices in Asokoro have increased by 20% this year, driven by high demand for executive housing.",
+                category: "market",
+                date: "December 5, 2024",
+                image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+                readTime: "3 min read"
+            },
+            {
+                id: 5,
+                title: "New Shopping Mall to Boost Garki Property Values",
+                excerpt: "A new shopping mall development in Garki is expected to increase property values in the surrounding area by 15%.",
+                category: "development",
+                date: "December 3, 2024",
+                image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+                readTime: "4 min read"
+            },
+            {
+                id: 6,
+                title: "Mortgage Rates Drop to 15% in Abuja",
+                excerpt: "Commercial banks have reduced mortgage interest rates to 15% for first-time home buyers in Abuja.",
+                category: "policy",
+                date: "December 1, 2024",
+                image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+                readTime: "3 min read"
+            }
+        ];
+
+        // Display news articles
+        function displayNews(articles = newsArticles) {
+            const newsGrid = document.getElementById('newsGrid');
+            newsGrid.innerHTML = articles.map(article => `
+                <article class="news-card" data-category="${article.category}">
+                    <div class="news-image">
+                        <img src="${article.image}" alt="${article.title}">
+                        <div class="news-category-badge">${article.category}</div>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-date">${article.date}</span>
+                            <span class="news-read-time">${article.readTime}</span>
+                        </div>
+                        <h3 class="news-title">${article.title}</h3>
+                        <p class="news-excerpt">${article.excerpt}</p>
+                        <a href="#" class="news-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            `).join('');
+        }
+
+        // Category filtering
+        document.querySelectorAll('.category-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Remove active class from all buttons
+                document.querySelectorAll('.category-btn').forEach(b => b.classList.remove('active'));
+                // Add active class to clicked button
+                this.classList.add('active');
+                
+                const category = this.dataset.category;
+                if (category === 'all') {
+                    displayNews();
+                } else {
+                    const filteredNews = newsArticles.filter(article => article.category === category);
+                    displayNews(filteredNews);
+                }
+            });
+        });
+
+        // Newsletter subscription
+        function subscribeNewsletter() {
+            const email = document.getElementById('newsletterEmailCta').value;
+            if (email) {
+                alert('Thank you for subscribing to our newsletter! You\'ll receive the latest Abuja real estate updates.');
+                document.getElementById('newsletterEmailCta').value = '';
+            } else {
+                alert('Please enter a valid email address.');
+            }
+        }
+
+        // Initialize news display
+        document.addEventListener('DOMContentLoaded', function() {
+            displayNews();
+        });
+    </script>
+</body>
+</html>

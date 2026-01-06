@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Profile - DARIK HOMES LTD</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-img">
+                    <img src="images/logo.jpg" alt="DARIK HOMES LTD Logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="logo-fallback" style="display: none; width: 50px; height: 50px; background: #e67e22; border-radius: 8px; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 1.2rem;">DH</div>
+                </div>
+                <div class="logo-text">
+                    <h2>DARIK HOMES LTD</h2>
+                    <p class="logo-tagline">Real Estates • Design • Construction • Investment</p>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="board.html" class="nav-link">Board of Directors</a></li>
+                <li><a href="properties.html" class="nav-link">Properties</a></li>
+                <li><a href="news.html" class="nav-link">News</a></li>
+                <li><a href="newsletter.html" class="nav-link">Newsletter</a></li>
+                <li><a href="company-profile.html" class="nav-link active">Company Profile</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact Us</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Company Header Section -->
+    <section class="company-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="company-logo-section">
+                    <div class="cover-logo">
+                        <img src="images/logo.jpg" alt="DARIK HOMES LTD Logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="logo-fallback" style="display: none; width: 120px; height: 120px; background: #e67e22; border-radius: 20px; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 3rem;">DH</div>
+                    </div>
+                    <div class="company-info">
+                        <h1>DARIK HOMES LTD</h1>
+                        <p class="company-tagline">Real Estates • Design • Construction • Investment</p>
+                        <p class="company-description">Building Dreams, Creating Communities</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Company Information Section -->
+    <section class="company-info-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Company Information</h2>
+                <p class="section-subtitle">Click on any card to learn more</p>
+            </div>
+            
+            <div class="info-grid">
+                <div class="info-card interactive-card" onclick="showCompanyDetails()">
+                    <div class="card-header">
+                        <i class="fas fa-building"></i>
+                        <h3>Company Overview</h3>
+                        <div class="card-indicator">
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="info-item">
+                            <span class="label">Registration Number:</span>
+                            <span class="value">RC: 1633288</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Established:</span>
+                            <span class="value">2019</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Experience:</span>
+                            <span class="value">7+ Years</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Projects Completed:</span>
+                            <span class="value">50+</span>
+                        </div>
+                        <div class="interactive-overlay">
+                            <p>Click to view detailed company history</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="info-card interactive-card" onclick="showLocationDetails()">
+                    <div class="card-header">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Headquarters</h3>
+                        <div class="card-indicator">
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="address-info">
+                            <p><strong>Address:</strong></p>
+                            <p>Plot 797 Cadastral Zone B11, Kaura District, FCT Abuja</p>
+                            <p><strong>Registration:</strong> RC: 1633288</p>
+                        </div>
+                        <div class="interactive-overlay">
+                            <p>Click to view on map</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="info-card interactive-card" onclick="showContactOptions()">
+                    <div class="card-header">
+                        <i class="fas fa-phone"></i>
+                        <h3>Contact Information</h3>
+                        <div class="card-indicator">
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <p><strong>Phone Numbers:</strong></p>
+                                    <p>+2348063264491</p>
+                                    <p>+2348057857418</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <p><strong>Email:</strong></p>
+                                    <p>bldrbabs309@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="interactive-overlay">
+                            <p>Click to contact us directly</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Stats Section -->
+    <section class="interactive-stats">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Achievements</h2>
+                <p class="section-subtitle">Hover over the stats to see more details</p>
+            </div>
+            
+            <div class="stats-grid">
+                <div class="stat-card" onmouseover="animateStat(this)" onmouseout="resetStat(this)">
+                    <div class="stat-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="stat-number" data-target="7">7</h3>
+                        <p>Years of Excellence</p>
+                        <div class="stat-details">
+                            <p>Since 2019, we've been building dreams</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="stat-card" onmouseover="animateStat(this)" onmouseout="resetStat(this)">
+                    <div class="stat-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="stat-number" data-target="50">50</h3>
+                        <p>Projects Completed</p>
+                        <div class="stat-details">
+                            <p>Residential and commercial projects</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="stat-card" onmouseover="animateStat(this)" onmouseout="resetStat(this)">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="stat-number" data-target="50">50</h3>
+                        <p>Happy Clients</p>
+                        <div class="stat-details">
+                            <p>Satisfied customers across Nigeria</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="stat-card" onmouseover="animateStat(this)" onmouseout="resetStat(this)">
+                    <div class="stat-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="stat-number" data-target="95">95</h3>
+                        <p>% Satisfaction Rate</p>
+                        <div class="stat-details">
+                            <p>Client satisfaction guaranteed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Values Section -->
+    <section class="company-values">
+        <div class="container">
+            <div class="values-content">
+                <div class="values-text">
+                    <h2>Building Dreams, Creating Communities</h2>
+                    <p class="values-subtitle">Innovative • Sustainable • Excellence</p>
+                    <div class="values-description">
+                        <p>We are committed to delivering exceptional real estate solutions that transform communities and create lasting value for our clients.</p>
+                    </div>
+                </div>
+                <div class="values-visual">
+                    <div class="values-grid">
+                        <div class="value-item">
+                            <div class="value-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <h3>Innovation</h3>
+                            <p>Cutting-edge technology and modern design</p>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <h3>Sustainability</h3>
+                            <p>Eco-friendly construction practices</p>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h3>Excellence</h3>
+                            <p>Uncompromising quality standards</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Foreword -->
+    <section class="foreword-section">
+        <div class="container">
+            <div class="foreword-header">
+                <h2>Foreword</h2>
+                <div class="foreword-divider"></div>
+            </div>
+            
+            <div class="foreword-content">
+                <div class="foreword-text">
+                    <div class="foreword-paragraph">
+                        <p>Darik Homes Limited is a real estate development and construction management company committed to structural stability and economic satisfactions of high quality buildings and civil engineering structures.</p>
+                    </div>
+                    
+                    <div class="foreword-paragraph">
+                        <p>We specialize in real estate development, property development services, construction and project management services and so on</p>
+                    </div>
+                    
+                    <div class="foreword-paragraph">
+                        <p>Our diverse range of residences cater to every style and need of humans. Each of our homes is a marvel of modern engineering and investment.</p>
+                    </div>
+                    
+                    <div class="foreword-paragraph">
+                        <p>Our projects are embodiments of forward-thinking design and cutting-edge technology</p>
+                    </div>
+                    
+                    <div class="foreword-paragraph">
+                        <p>We look forward to seeing you invest with us for your dreams to come through.</p>
+                    </div>
+                    
+                    <div class="foreword-paragraph welcome-message">
+                        <p><strong>Welcome to Darik Homes Ltd</strong></p>
+                    </div>
+                    
+                    <div class="signature-section-inline">
+                        <div class="signature-content">
+                            <p class="signature-name"><strong>Dr. Babatunde Kazeem Adeleke</strong></p>
+                            <p class="signature-title">Managing Director & Chief Executive Officer</p>
+                            <p class="signature-company">DARIK HOMES LTD</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us: Vision and Mission -->
+    <section class="vision-mission-profile">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Us: Vision and Mission</h2>
+                <p class="section-subtitle">Our commitment to excellence and innovation</p>
+            </div>
+            
+            <div class="vision-mission-grid">
+                <div class="vision-card">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h3>Our Vision</h3>
+                    </div>
+                    <div class="card-content">
+                        <p>To be the leading real estate development company in Nigeria, recognized for excellence in creating sustainable, innovative, and high-quality residential and commercial properties that enhance communities and provide lasting value to our clients and partners.</p>
+                    </div>
+                </div>
+                
+                <div class="mission-card">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3>Our Mission</h3>
+                    </div>
+                    <div class="card-content">
+                        <p>Our mission is to ensure that we provide buildings and construction services with adequate structural stability and great economic satisfaction.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Board of Directors: Brief History -->
+    <section class="board-history">
+        <div class="container">
+            <h2>Board of Directors: Brief History</h2>
+            <div class="board-brief">
+                <div class="board-member-brief">
+                    <h3>Dr. Babatunde Kazeem Adeleke - Managing Director & CEO</h3>
+                    <p>Corporate Member of the Nigeria Institute of Building (NIOB) and Registered Builder with the Council of Registered Builders of Nigeria (CORBON). He holds a Doctor of Philosophy Degree (Ph.D) in Construction Technology (Structures) from Ahmadu Bello University Zaria, with extensive experience in structural design & detailing, building construction, and project management.</p>
+                </div>
+                <div class="board-member-brief">
+                    <h3>Prof. Mustapha Muhammed Saad - Executive Director</h3>
+                    <p>Professor of Construction Management at Ahmadu Bello University, Zaria. He holds a Ph.D. in Construction Management from University of Witwatersrand, South Africa, and brings extensive leadership and corporate management skills in real estate and construction.</p>
+                </div>
+                <div class="board-member-brief">
+                    <h3>Mr. Ayoade Sakir Adeleke - Executive Director</h3>
+                    <p>Executive Director of DARIK HOMES LTD with extensive experience in real estate management and sustainability. He is a PhD candidate at Nasarawa State University, holds an M.Sc. in Mathematics from Ahmadu Bello University, Zaria, and a B.Sc. in Mathematics from the University of Jos.</p>
+                </div>
+                <div class="board-member-brief">
+                    <h3>Mr. Habib Abdulsalam - Company Secretary</h3>
+                    <p>Company Secretary of DARIK HOMES LTD, utilizing his knowledge to foster good corporate and social responsibility. He holds a Bachelor of Science Degree in Mass Communication from Olabisi Onabanjo University, Ogun State, and a Higher Diploma in Public Relations from NIPR.</p>
+                </div>
+                <div class="board-member-brief">
+                    <h3>Dr. Abdulwahab Lasisi - Director</h3>
+                    <p>United Kingdom practicing medical doctor with keen interest in entrepreneurship with emphasis in real estate development. Currently serving as a trust grade respiratory SHQ with Saint Bartholomew Hospital, London. He holds an MBBS Qualification in Medicine and Surgery from the University of Jos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Current Projects -->
+    <section class="current-projects">
+        <div class="container">
+            <h2>Current Projects</h2>
+            <div class="current-projects-showcase">
+                <div class="project-category">
+                    <h3>Kaura District Development</h3>
+                    <p class="project-location">Close to Prince And Princess Estate, FCT Abuja</p>
+                    <div class="project-grid">
+                        <div class="project-item current-project">
+                            <img src="images/WhatsApp Image 2025-10-23 at 21.19.25_54956efe.jpg" alt="Modern Luxury House" onerror="this.src='https://via.placeholder.com/400x300/2c3e50/ffffff?text=Modern+House'">
+                            <h4>Modern Luxury House</h4>
+                            <p>Stunning modern house with contemporary design, featuring spacious rooms, modern finishes, and premium amenities.</p>
+                            <div class="project-status">
+                                <span class="status-badge for-sale">For Sale</span>
+                            </div>
+                        </div>
+                        <div class="project-item current-project">
+                            <img src="images/WhatsApp Image 2025-10-23 at 21.22.05_310a0541.jpg" alt="Investment Units" onerror="this.src='https://via.placeholder.com/400x300/27ae60/ffffff?text=Investment+Units'">
+                            <h4>Investment Units - Under Construction</h4>
+                            <p>Premium investment opportunity with uncompleted units available for sale. Perfect for investors seeking high ROI potential.</p>
+                            <div class="project-status">
+                                <span class="status-badge investment">Investment Opportunity</span>
+                            </div>
+                        </div>
+                        <div class="project-item current-project">
+                            <img src="images/New folder/WhatsApp Image 2025-12-19 at 21.06.09_c8a72fd7.jpg" alt="Modern Building Project" onerror="this.src='https://via.placeholder.com/400x300/2c3e50/ffffff?text=Project'">
+                            <h4>Modern Building Development</h4>
+                            <p>Contemporary architectural design with premium finishes and modern amenities.</p>
+                            <div class="project-status">
+                                <span class="status-badge for-sale">For Sale</span>
+                            </div>
+                        </div>
+                        <div class="project-item current-project">
+                            <img src="images/New folder/WhatsApp Image 2025-12-19 at 21.06.09_fb28c463.jpg" alt="Residential Complex" onerror="this.src='https://via.placeholder.com/400x300/2c3e50/ffffff?text=Project'">
+                            <h4>Residential Complex</h4>
+                            <p>Premium residential development featuring modern design and quality construction.</p>
+                            <div class="project-status">
+                                <span class="status-badge investment">Investment Opportunity</span>
+                            </div>
+                        </div>
+                        <div class="project-item current-project">
+                            <img src="images/New folder/WhatsApp Image 2025-12-19 at 21.06.10_be1a3ab7.jpg" alt="Construction Project" onerror="this.src='https://via.placeholder.com/400x300/2c3e50/ffffff?text=Project'">
+                            <h4>Construction Development</h4>
+                            <p>Ongoing construction project showcasing our commitment to quality and excellence.</p>
+                            <div class="project-status">
+                                <span class="status-badge investment">Under Construction</span>
+                            </div>
+                        </div>
+                        <div class="project-item current-project">
+                            <img src="images/New folder/WhatsApp Image 2025-12-19 at 21.09.46_e5b1e6c4.jpg" alt="Modern Estate" onerror="this.src='https://via.placeholder.com/400x300/2c3e50/ffffff?text=Project'">
+                            <h4>Modern Estate Development</h4>
+                            <p>Luxury estate development with state-of-the-art facilities and premium amenities.</p>
+                            <div class="project-status">
+                                <span class="status-badge for-sale">For Sale</span>
+                            </div>
+                        </div>
+                        <div class="project-item current-project">
+                            <img src="images/New folder/WhatsApp Image 2025-12-19 at 21.17.46_0bb1c224.jpg" alt="Building Project" onerror="this.src='https://via.placeholder.com/400x300/2c3e50/ffffff?text=Project'">
+                            <h4>Building Project</h4>
+                            <p>Modern building project featuring innovative design and sustainable construction methods.</p>
+                            <div class="project-status">
+                                <span class="status-badge investment">Investment Opportunity</span>
+                            </div>
+                        </div>
+                        <div class="project-item current-project">
+                            <img src="images/New folder/WhatsApp Image 2025-12-19 at 21.19.55_7bb52a5d.jpg" alt="Residential Development" onerror="this.src='https://via.placeholder.com/400x300/2c3e50/ffffff?text=Project'">
+                            <h4>Residential Development</h4>
+                            <p>Premium residential development with modern architecture and quality finishes.</p>
+                            <div class="project-status">
+                                <span class="status-badge for-sale">For Sale</span>
+                            </div>
+                        </div>
+                        <div class="project-item current-project">
+                            <img src="images/New folder/WhatsApp Image 2025-12-19 at 21.23.11_f6863267.jpg" alt="Construction Site" onerror="this.src='https://via.placeholder.com/400x300/2c3e50/ffffff?text=Project'">
+                            <h4>Construction Site</h4>
+                            <p>Active construction site demonstrating our expertise in project management and execution.</p>
+                            <div class="project-status">
+                                <span class="status-badge investment">Under Construction</span>
+                            </div>
+                        </div>
+                        <div class="project-item current-project">
+                            <img src="images/New folder/WhatsApp Image 2025-12-19 at 21.25.57_588e4980.jpg" alt="Modern Building" onerror="this.src='https://via.placeholder.com/400x300/2c3e50/ffffff?text=Project'">
+                            <h4>Modern Building</h4>
+                            <p>Contemporary building design with premium features and modern amenities.</p>
+                            <div class="project-status">
+                                <span class="status-badge for-sale">For Sale</span>
+                            </div>
+                        </div>
+                        <div class="project-item current-project">
+                            <img src="images/New folder/WhatsApp Image 2025-12-19 at 21.31.38_d1c23c5e.jpg" alt="Development Project" onerror="this.src='https://via.placeholder.com/400x300/2c3e50/ffffff?text=Project'">
+                            <h4>Development Project</h4>
+                            <p>Large-scale development project showcasing our capabilities in real estate development.</p>
+                            <div class="project-status">
+                                <span class="status-badge investment">Investment Opportunity</span>
+                            </div>
+                        </div>
+                        <div class="project-item current-project">
+                            <img src="images/New folder/WhatsApp Image 2025-12-19 at 21.37.09_34e5593f.jpg" alt="Building Complex" onerror="this.src='https://via.placeholder.com/400x300/2c3e50/ffffff?text=Project'">
+                            <h4>Building Complex</h4>
+                            <p>Multi-unit building complex with modern design and premium facilities.</p>
+                            <div class="project-status">
+                                <span class="status-badge for-sale">For Sale</span>
+                            </div>
+                        </div>
+                        <div class="project-item current-project">
+                            <img src="images/New folder/WhatsApp Image 2025-12-19 at 21.37.09_6de501b9.jpg" alt="Residential Project" onerror="this.src='https://via.placeholder.com/400x300/2c3e50/ffffff?text=Project'">
+                            <h4>Residential Project</h4>
+                            <p>Premium residential project with contemporary architecture and quality construction.</p>
+                            <div class="project-status">
+                                <span class="status-badge investment">Investment Opportunity</span>
+                            </div>
+                        </div>
+                        <div class="project-item current-project">
+                            <img src="images/New folder/WhatsApp Image 2025-12-19 at 21.37.09_9c3d62ac.jpg" alt="Modern Development" onerror="this.src='https://via.placeholder.com/400x300/2c3e50/ffffff?text=Project'">
+                            <h4>Modern Development</h4>
+                            <p>State-of-the-art development featuring innovative design and sustainable practices.</p>
+                            <div class="project-status">
+                                <span class="status-badge for-sale">For Sale</span>
+                            </div>
+                        </div>
+                        <div class="project-item current-project">
+                            <img src="images/New folder/WhatsApp Image 2025-12-19 at 21.38.34_59a8e62f.jpg" alt="Construction Development" onerror="this.src='https://via.placeholder.com/400x300/2c3e50/ffffff?text=Project'">
+                            <h4>Construction Development</h4>
+                            <p>Ongoing construction development demonstrating our commitment to quality and excellence.</p>
+                            <div class="project-status">
+                                <span class="status-badge investment">Under Construction</span>
+                            </div>
+                        </div>
+                        <div class="project-item current-project">
+                            <img src="images/New folder/WhatsApp Image 2025-12-19 at 21.41.11_9dc70a51.jpg" alt="Building Development" onerror="this.src='https://via.placeholder.com/400x300/2c3e50/ffffff?text=Project'">
+                            <h4>Building Development</h4>
+                            <p>Modern building development with premium features and contemporary design.</p>
+                            <div class="project-status">
+                                <span class="status-badge for-sale">For Sale</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Us -->
+    <section class="contact-profile">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-info-grid">
+                <div class="contact-section">
+                    <h3>Headquarters</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <p><strong>Address:</strong></p>
+                            <p>Plot 797 Cadastral Zone B11, Kaura District, FCT Abuja<br>RC: 1633288</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-section">
+                    <h3>Communication</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <p><strong>Phone:</strong></p>
+                            <p>+2348063264491<br>+2348057857418</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <p><strong>Email:</strong></p>
+                            <p>bldrbabs309@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-section">
+                    <h3>Business Hours</h3>
+                    <div class="business-hours">
+                        <p><strong>Monday - Friday:</strong> 8:00 AM - 6:00 PM</p>
+                        <p><strong>Saturday:</strong> 9:00 AM - 4:00 PM</p>
+                        <p><strong>Sunday:</strong> Closed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="footer-logo-img">
+                            <img src="images/logo.jpg" alt="DARIK HOMES LTD Logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="logo-fallback" style="display: none; width: 40px; height: 40px; background: #e67e22; border-radius: 8px; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 1rem;">DH</div>
+                        </div>
+                        <div class="footer-logo-text">
+                            <h3>DARIK HOMES LTD</h3>
+                            <p>Top notch Living solutions</p>
+                        </div>
+                    </div>
+                    <p>DARIK HOMES is a real estate firm with over 7 years of expertise, and our main goal is to provide amazing locations to our partners and esteemed customers.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Get In Touch</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Plot 797 Cadastral Zone B11, Kaura District, FCT Abuja<br>RC: 1633288</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+2348063264491<br>+2348057857418</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>bldrbabs309@gmail.com</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="index.html#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to get updated with the latest news</p>
+                    <div class="footer-newsletter">
+                        <input type="email" placeholder="Your email address" id="footerNewsletterEmail">
+                        <button onclick="subscribeFooterNewsletter()">Subscribe Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 DARIK HOMES LTD, All rights reserved.</p>
+                <p>Developed by DARIK HOMES Team</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - DARIK HOMES LTD</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-img">
+                    <img src="images/logo.jpg" alt="DARIK HOMES LTD Logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="logo-fallback" style="display: none; width: 50px; height: 50px; background: #e67e22; border-radius: 8px; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 1.2rem;">DH</div>
+                </div>
+                <div class="logo-text">
+                    <h2>DARIK HOMES LTD</h2>
+                    <p class="logo-tagline">Real Estates • Design • Construction • Investment</p>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link active">About Us</a></li>
+                <li><a href="board.html" class="nav-link">Board of Directors</a></li>
+                <li><a href="properties.html" class="nav-link">Properties</a></li>
+                <li><a href="news.html" class="nav-link">News</a></li>
+                <li><a href="newsletter.html" class="nav-link">Newsletter</a></li>
+                <li><a href="company-profile.html" class="nav-link">Company Profile</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact Us</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Hero Section -->
+    <section class="page-hero construction-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Building Dreams, Creating Communities</h1>
+                <p>Your trusted partner in construction excellence and real estate development</p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="7">7</span>
+                        <span class="stat-label">Years of Excellence</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="50">50</span>
+                        <span class="stat-label">Projects Completed</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="50">50</span>
+                        <span class="stat-label">Happy Clients</span>
+                    </div>
+                </div>
+            </div>
+            <div class="construction-animation">
+                <div class="crane-animation">
+                    <i class="fas fa-hard-hat"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision and Mission Section -->
+    <section class="vision-mission">
+        <div class="container">
+            <div class="vision-mission-grid">
+                <div class="vision-card">
+                    <div class="card-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h2>Our Vision</h2>
+                    <p>Our vision is to become a leader in real estate development and general construction by creating high standard quality and sustainable properties across the globe.</p>
+                </div>
+                <div class="mission-card">
+                    <div class="card-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h2>Our Mission</h2>
+                    <p>Our mission is to ensure that we provide buildings and construction services with adequate structural stability and great economic satisfaction.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Overview -->
+    <section class="company-overview construction-overview">
+        <div class="container">
+            <div class="section-header">
+                <h2>About DARIK HOMES LTD</h2>
+                <p class="section-subtitle">Building Excellence Since 2019</p>
+            </div>
+            
+            <div class="overview-content">
+                <div class="overview-text">
+                    <div class="welcome-message">
+                        <h3>Welcome to Our Construction Family</h3>
+                        <p>Thank you for your interest in knowing about Darik Homes. We appreciate you, so much for your time and we promise not to take it for granted.</p>
+                    </div>
+                    
+                    <div class="company-focus">
+                        <div class="focus-item">
+                            <div class="focus-icon">
+                                <i class="fas fa-tools"></i>
+                            </div>
+                            <div class="focus-content">
+                                <h4>Construction Excellence</h4>
+                                <p>As a real estate development and general construction company, we focus on the integration of modern technology into luxury residential and commercial buildings with the use of sustainable methods of construction.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="focus-item">
+                            <div class="focus-icon">
+                                <i class="fas fa-globe-africa"></i>
+                            </div>
+                            <div class="focus-content">
+                                <h4>Pan-African Reach</h4>
+                                <p>Led by team of professionals in the built environment, we develop and sell properties in strategic places within Nigeria and Africa as a whole. We render general construction and renovations of high quality standards to various clients across the continent.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="interactive-features">
+                        <button class="btn-primary construction-btn" onclick="showConstructionProcess()">
+                            <i class="fas fa-play"></i>
+                            See Our Construction Process
+                        </button>
+                        <button class="btn-secondary" onclick="showProjectGallery()">
+                            <i class="fas fa-images"></i>
+                            View Project Gallery
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="overview-visual">
+                    <div class="construction-showcase">
+                        <div class="showcase-item active">
+                            <img src="https://images.unsplash.com/photo-1600607687644-c7171b42498b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1973&q=80" alt="Construction Site">
+                            <div class="showcase-overlay">
+                                <h4>Modern Construction</h4>
+                                <p>State-of-the-art building techniques</p>
+                            </div>
+                        </div>
+                        <div class="showcase-item">
+                            <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Luxury Homes">
+                            <div class="showcase-overlay">
+                                <h4>Luxury Residences</h4>
+                                <p>Premium living spaces</p>
+                            </div>
+                        </div>
+                        <div class="showcase-item">
+                            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Commercial Buildings">
+                            <div class="showcase-overlay">
+                                <h4>Commercial Projects</h4>
+                                <p>Business infrastructure</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="showcase-controls">
+                        <button class="control-btn active" onclick="changeShowcase(0)"></button>
+                        <button class="control-btn" onclick="changeShowcase(1)"></button>
+                        <button class="control-btn" onclick="changeShowcase(2)"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values -->
+    <section class="core-values construction-values">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Construction Values</h2>
+                <p class="section-subtitle">The Foundation of Our Success</p>
+            </div>
+            
+            <div class="values-grid">
+                <div class="value-card construction-card" onclick="animateValueCard(this)">
+                    <div class="value-icon">
+                        <i class="fas fa-hard-hat"></i>
+                    </div>
+                    <h3>Safety First</h3>
+                    <p>We prioritize safety in every project, ensuring secure construction practices and worker protection.</p>
+                    <div class="value-stats">
+                        <span class="stat">0</span>
+                        <span class="stat-label">Safety Incidents</span>
+                    </div>
+                </div>
+                
+                <div class="value-card construction-card" onclick="animateValueCard(this)">
+                    <div class="value-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Quality Craftsmanship</h3>
+                    <p>We deliver superior construction quality with attention to detail and precision in every build.</p>
+                    <div class="value-stats">
+                        <span class="stat">100%</span>
+                        <span class="stat-label">Quality Guarantee</span>
+                    </div>
+                </div>
+                
+                <div class="value-card construction-card" onclick="animateValueCard(this)">
+                    <div class="value-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Sustainable Building</h3>
+                    <p>We integrate eco-friendly materials and sustainable construction methods for a greener future.</p>
+                    <div class="value-stats">
+                        <span class="stat">100%</span>
+                        <span class="stat-label">Eco Materials</span>
+                    </div>
+                </div>
+                
+                <div class="value-card construction-card" onclick="animateValueCard(this)">
+                    <div class="value-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Timely Delivery</h3>
+                    <p>We complete projects on schedule while maintaining the highest standards of construction excellence.</p>
+                    <div class="value-stats">
+                        <span class="stat">95%</span>
+                        <span class="stat-label">On-Time Delivery</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Construction Process -->
+    <section class="construction-process">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Construction Process</h2>
+                <p class="section-subtitle">From Concept to Completion</p>
+            </div>
+            
+            <div class="process-timeline">
+                <div class="process-step" onclick="showProcessDetail(0)">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <i class="fas fa-drafting-compass"></i>
+                        </div>
+                        <h3>Planning & Design</h3>
+                        <p>Architectural planning and structural design</p>
+                        <div class="step-details">
+                            <ul>
+                                <li>Site analysis and feasibility study</li>
+                                <li>Architectural design and blueprints</li>
+                                <li>Structural engineering calculations</li>
+                                <li>Permit acquisition and approvals</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="process-step" onclick="showProcessDetail(1)">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <i class="fas fa-hammer"></i>
+                        </div>
+                        <h3>Foundation & Structure</h3>
+                        <p>Building the foundation and structural framework</p>
+                        <div class="step-details">
+                            <ul>
+                                <li>Excavation and foundation work</li>
+                                <li>Structural steel and concrete work</li>
+                                <li>Framing and structural assembly</li>
+                                <li>Quality control and inspections</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="process-step" onclick="showProcessDetail(2)">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h3>Finishing & Details</h3>
+                        <p>Interior and exterior finishing touches</p>
+                        <div class="step-details">
+                            <ul>
+                                <li>Electrical and plumbing installation</li>
+                                <li>Interior and exterior finishing</li>
+                                <li>Landscaping and final touches</li>
+                                <li>Final inspections and handover</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Stats -->
+    <section class="company-stats construction-stats">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Construction Achievements</h2>
+                <p class="section-subtitle">Numbers That Speak for Themselves</p>
+            </div>
+            
+            <div class="stats-grid">
+                <div class="stat-item construction-stat" onclick="animateStat(this)">
+                    <div class="stat-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="stat-number" data-target="7">7</h3>
+                        <p>Years of Excellence</p>
+                        <div class="stat-progress">
+                            <div class="progress-bar" style="width: 100%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="stat-item construction-stat" onclick="animateStat(this)">
+                    <div class="stat-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="stat-number" data-target="50">50</h3>
+                        <p>Projects Completed</p>
+                        <div class="stat-progress">
+                            <div class="progress-bar" style="width: 100%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="stat-item construction-stat" onclick="animateStat(this)">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="stat-number" data-target="50">50</h3>
+                        <p>Happy Clients</p>
+                        <div class="stat-progress">
+                            <div class="progress-bar" style="width: 100%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="stat-item construction-stat" onclick="animateStat(this)">
+                    <div class="stat-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="stat-number" data-target="95">95</h3>
+                        <p>% Satisfaction Rate</p>
+                        <div class="stat-progress">
+                            <div class="progress-bar" style="width: 95%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="footer-logo-img">
+                            <img src="images/logo.jpg" alt="DARIK HOMES LTD Logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="logo-fallback" style="display: none; width: 40px; height: 40px; background: #e67e22; border-radius: 8px; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 1rem;">DH</div>
+                        </div>
+                        <div class="footer-logo-text">
+                            <h3>DARIK HOMES LTD</h3>
+                            <p>Building Dreams, Creating Communities</p>
+                        </div>
+                    </div>
+                    <p>DARIK HOMES is a real estate firm with over 7 years of expertise, and our main goal is to provide amazing locations to our partners and esteemed customers.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Get In Touch</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Plot 797 Cadastral Zone B11, Kaura District, FCT Abuja<br>RC: 1633288</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+2348063264491<br>+2348057857418</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>bldrbabs309@gmail.com</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="index.html#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to get updated with the latest news</p>
+                    <div class="footer-newsletter">
+                        <input type="email" placeholder="Your email address" id="footerNewsletterEmail">
+                        <button onclick="subscribeFooterNewsletter()">Subscribe Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 DARIK HOMES LTD, All rights reserved.</p>
+                <p>Developed by DARIK HOMES Team</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
