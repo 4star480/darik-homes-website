@@ -1,0 +1,116 @@
+<!--@page {
+  "title": "Contact us | DARIK HOMES LTD | Kaura District, Abuja",
+  "description": "Call, WhatsApp or email Darik Homes to ask about the flats in Kaura District, book a site inspection or talk about a build. Office: Plot 797, Cadastral Zone B11, Kaura District, FCT Abuja.",
+  "path": "/contact.html",
+  "nav": "contact",
+  "jsonld": true
+}-->
+<!doctype html>
+<html lang="en-NG">
+<head>
+{{> head}}
+</head>
+<body>
+{{> header}}
+<main id="main">
+
+  <section class="section section--first">
+    <div class="wrap contact">
+      <div>
+        <span class="eyebrow">Contact us</span>
+        <h1 class="contact__title">Let's talk about your home.</h1>
+        <p class="lede">Ask about the flats in Kaura District, book a site inspection, or tell us about the building you want to put up.</p>
+        <ul class="channels">
+          <li>
+            <a class="channel channel--wa" href="https://wa.me/2348057857418" data-wa-text="Hello Darik Homes, I would like to know more about your properties." rel="noopener">
+              <span class="channel__icon"><svg aria-hidden="true"><use href="#i-wa"/></svg></span>
+              <span><small>WhatsApp</small><span>+234 805 785 7418</span></span>
+            </a>
+          </li>
+          <li>
+            <a class="channel channel--wa" href="https://wa.me/2348063264491" data-wa-text="Hello Darik Homes, I would like to know more about your properties." rel="noopener">
+              <span class="channel__icon"><svg aria-hidden="true"><use href="#i-wa"/></svg></span>
+              <span><small>WhatsApp</small><span>+234 806 326 4491</span></span>
+            </a>
+          </li>
+          <li>
+            <a class="channel" href="tel:+2348057857418">
+              <span class="channel__icon"><svg aria-hidden="true"><use href="#i-phone"/></svg></span>
+              <span><small>Call</small><span>+234 805 785 7418</span></span>
+            </a>
+          </li>
+          <li>
+            <a class="channel" href="tel:+2348063264491">
+              <span class="channel__icon"><svg aria-hidden="true"><use href="#i-phone"/></svg></span>
+              <span><small>Call</small><span>+234 806 326 4491</span></span>
+            </a>
+          </li>
+          <li>
+            <a class="channel" href="mailto:info@darikhomes.com">
+              <span class="channel__icon"><svg aria-hidden="true"><use href="#i-mail"/></svg></span>
+              <span><small>Email</small><span>info@darikhomes.com</span></span>
+            </a>
+          </li>
+          <li>
+            <a class="channel" href="https://www.google.com/maps/search/?api=1&amp;query=Prince%20and%20Princess%20Estate%2C%20Kaura%20District%2C%20Abuja" rel="noopener">
+              <span class="channel__icon"><svg aria-hidden="true"><use href="#i-pin"/></svg></span>
+              <span><small>Office and site</small><span>Plot 797, Cadastral Zone B11, after the second gate of Prince and Princess Estate, Kaura District, FCT Abuja</span></span>
+            </a>
+          </li>
+        </ul>
+        <div class="hours">
+          <p><strong>Office hours</strong></p>
+          <p>Monday to Friday, 8:00 am to 6:00 pm<br>Saturday, 9:00 am to 4:00 pm<br>Sunday, closed</p>
+        </div>
+      </div>
+
+      <form class="form" name="enquiry" method="POST" action="/thank-you.html" data-netlify="true" netlify-honeypot="bot-field" data-enquiry>
+        <input type="hidden" name="form-name" value="enquiry">
+        <p class="hidden" aria-hidden="true"><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+        <h2 class="form__title">Send an enquiry</h2>
+        <div class="form__row">
+          <div class="field">
+            <label for="f-name">Full name</label>
+            <input id="f-name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="f-phone">Phone number</label>
+            <input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required>
+          </div>
+        </div>
+        <div class="field">
+          <label for="f-email">Email <span class="field__hint">(optional)</span></label>
+          <input id="f-email" name="email" type="email" autocomplete="email">
+        </div>
+        <div class="field">
+          <label for="f-interest">I'm interested in</label>
+          <select id="f-interest" name="interest">
+            <option value="Darik Homes Apartment flats">Darik Homes Apartment flats, Kaura District</option>
+            <option value="Site inspection">Booking a site inspection</option>
+            <option value="Investment units">Uncompleted units for investors</option>
+            <option value="Construction">Building and construction</option>
+            <option value="Renovation">Remodeling and renovation</option>
+            <option value="Project management">Project management and advisory</option>
+            <option value="Something else">Something else</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="f-message">Message</label>
+          <textarea id="f-message" name="message" required placeholder="Tell us what you are looking for, and a good time to call you."></textarea>
+        </div>
+        <div class="form__actions">
+          <button class="btn btn--primary" type="submit">Send enquiry</button>
+          <button class="btn btn--whatsapp" type="button" data-send-whatsapp>
+            <svg aria-hidden="true"><use href="#i-wa"/></svg>
+            Send on WhatsApp instead
+          </button>
+        </div>
+        <p class="form__fine">We use your details only to reply to this enquiry.</p>
+      </form>
+    </div>
+  </section>
+
+</main>
+{{> footer}}
+</body>
+</html>
