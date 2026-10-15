@@ -1,7 +1,4 @@
-# Netlify redirects file
-# This ensures proper handling of image paths
-
-
-
-
-
+/company-profile.html  /about.html  301
+/news.html             /           301
+/newsletter.html       /           301
+/debug-3d.html         /           301

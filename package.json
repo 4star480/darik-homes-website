@@ -1,0 +1,20 @@
+{
+  "name": "darik-homes-website",
+  "version": "2.0.0",
+  "private": true,
+  "description": "darikhomes.com: static site for DARIK HOMES LTD with a scroll-driven 3D build of the Kaura District block.",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "build:images": "node scripts/build.mjs --images",
+    "serve": "node scripts/serve.mjs",
+    "check": "node scripts/check.mjs"
+  },
+  "devDependencies": {
+    "@fontsource-variable/fraunces": "^5.2.5",
+    "@fontsource-variable/inter": "^5.2.5",
+    "esbuild": "^0.25.0",
+    "sharp": "^0.34.0",
+    "three": "^0.180.0"
+  }
+}
