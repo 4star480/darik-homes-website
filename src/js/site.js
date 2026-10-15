@@ -173,12 +173,13 @@ if (lightbox && typeof lightbox.showModal === 'function') {
 
 /* ---------- enquiry forms ---------- */
 
-function whatsappLink(text) {
-  return `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(text)}`;
+function whatsappLink(text, number = WHATSAPP) {
+  return `https://wa.me/${number}?text=${encodeURIComponent(text)}`;
 }
 
 document.querySelectorAll('[data-wa-text]').forEach((a) => {
-  a.href = whatsappLink(a.dataset.waText);
+  const number = (a.getAttribute('href') || '').match(/wa\.me\/(\d+)/)?.[1];
+  a.href = whatsappLink(a.dataset.waText, number);
 });
 
 document.querySelectorAll('form[data-enquiry]').forEach((form) => {

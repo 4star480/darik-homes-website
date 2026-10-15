@@ -1861,7 +1861,7 @@ a.channel:hover {
   text-transform: uppercase;
   color: var(--muted);
 }
-.channel span {
+.channel small + span {
   display: block;
   margin-top: 2px;
   font-weight: 600;
